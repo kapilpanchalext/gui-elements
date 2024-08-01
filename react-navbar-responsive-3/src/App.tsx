@@ -6,17 +6,15 @@ function App() {
   const [activeTab, setActiveTab] = useState<string>('#home');
   const [activeTheme, setActiveTheme] = useState<string>('dark');
   const [isResponsive, setIsResponsive] = useState(false);
- 
+
   // Function to handle tab click
   const tabClickHandler = (tab: string) => {
     setActiveTab(tab);
   };
- 
+
   const themeHandler = () => {
-   setActiveTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setActiveTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   }
- 
-  console.log(isResponsive);
 
   return (
     <>
@@ -71,4 +69,4 @@ function App() {
   );
 }
  
- export default App;
+export default App;
