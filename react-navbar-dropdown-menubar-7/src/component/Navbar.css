@@ -85,16 +85,16 @@ body {
     overflow: hidden;
 }
   
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    margin: 0;
-    padding: 0; 
-    background: none;
+.dropicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     color: inherit;
-    display: inline-block;
-}
+    cursor: pointer;
+  }
   
 .dropdown-content {
     display: none;

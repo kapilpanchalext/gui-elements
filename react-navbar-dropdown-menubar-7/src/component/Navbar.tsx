@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
 
           <div className="dropdown">
-            <a href="#" className="dropbtn">
+            <a href="#" className="dropicon">
               <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>arrow_drop_down</span>
             </a>
             <div className="dropdown-content">
