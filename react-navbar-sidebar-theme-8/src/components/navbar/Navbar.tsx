@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "./Navbar.css";
 import "../../theme/theme.css";
+import Sidebar from '../sidebar/Sidebar';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -20,6 +21,7 @@ const Navbar = () => {
   return (
     <>
       <div>
+        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
         <div className={isResponsive ? `topnav ${activeTheme}` : `topnav responsive ${activeTheme}`}>
           <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <h4>LOGO</h4>
@@ -81,13 +83,21 @@ const Navbar = () => {
             </a>
 
           </div>
+          
+        </div>
+        
+        </div>
+        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
+        <Sidebar />
         </div>
 
         <div style={{ paddingLeft: "16px" }}>
           <h2>Top Navigation Example</h2>
           <p>Some content..</p>
         </div>
+        
       </div>
+      
     </>
   )
 }

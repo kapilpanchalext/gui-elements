@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import "./Sidebar.css";
+import "../../theme/theme.css";
 
 const Sidebar = () => {
 
@@ -81,10 +82,6 @@ const Sidebar = () => {
         <div className="separator"></div>
         <a href="#envelope"><span className="material-symbols-outlined">account_circle</span><span className="text">UserName</span></a>
       </div>
-      <div className="main" contentEditable style={{ overflow: "auto", maxWidth: "100%", height: "100vh" }}>
-          <h1>Main Content Area</h1>
-          <p>Your content goes here...</p>
-        </div>
     </>
   )
 }
