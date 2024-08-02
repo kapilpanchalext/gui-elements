@@ -27,21 +27,21 @@ body {
 
 /* .topnav.dark {
   background-color: #000000;
-} */
+}
 
-/* .topnav.dark a {
+.topnav.dark a {
   color: #d5d5d5;
-} */
+}
 
-/* .topnav.dark a.active {
+.topnav.dark a.active {
   color: white;
 }
 
 .topnav.light {
   background-color: #d5d5d5;
-} */
+}
 
-/* .topnav.light a {
+.topnav.light a {
   color: #1c1c1c;
 }
 
@@ -102,5 +102,4 @@ body {
   max-width: 200px;
   height: 35px;
   border-radius: 20px;
-  background-color: #d5d5d5;
 }
