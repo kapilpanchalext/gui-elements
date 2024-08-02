@@ -79,8 +79,6 @@ function App() {
         <a href="#trash"><span className="material-symbols-outlined">delete</span><span className="text">Trash</span></a>
         <div className="separator"></div>
         <a href="#envelope"><span className="material-symbols-outlined">account_circle</span><span className="text">UserName</span></a>
-
-
       
       </div>
       <div onClick={closeSidebarHandler} className="main" contentEditable style={{ overflow: "auto", maxWidth: "100%", height: "100vh" }}>
