@@ -112,8 +112,11 @@ function App() {
           onClick={() => tabClickHandler('#about')}>
           About
         </a>
-        <div className='search'>
-          <input className='input' type="text" placeholder="Search.." name="search" />
+        <div className="input-icons">
+          <span className="material-symbols-outlined icon" style={{ fontSize: "24px" }}>search</span>
+          <div className='search'>
+            <input className='input' type="text" placeholder="Search.." name="search" />
+          </div>
         </div>
         <a className="icon" onClick={() => setIsResponsive(!isResponsive)}>
           <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
