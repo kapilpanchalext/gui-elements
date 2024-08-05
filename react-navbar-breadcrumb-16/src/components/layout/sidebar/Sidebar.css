@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidenav {
+  height: 90vh;
+  width: 60px;
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.3s;
+  white-space: nowrap;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav .bottom-content {
+  margin-top: auto;
+}
+
+.sidenav.expanded {
+  width: 200px;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidenav a .material-symbols-outlined {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidenav .text {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.sidenav.expanded .text {
+  opacity: 1;
+}
+
+.sidenav a:hover {
+  color: var(--secondary-500);
+}
+
+
+.separator {
+  height: 1px;
+  background-color: var(--primary-800);
+  margin: 0 16px;
+}
+
+.main {
+  margin-left: 60px;
+  padding: 16px;
+  transition: margin-left 0.3s;
+}
+
+.sidenav.expanded ~ .main {
+  margin-left: 200px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav a { font-size: 18px; }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--primary-700); 
+  border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-500); 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-100); 
+}
