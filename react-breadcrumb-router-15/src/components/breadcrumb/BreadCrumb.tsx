@@ -4,7 +4,7 @@ import "../../App.css";
 type Props = {}
 
 const BreadCrumb = (props: Props) => {
-    const location = useLocation();
+  const location = useLocation();
   const navigate = useNavigate();
   
   const pathnames = location.pathname.split('/').filter((x) => x);
