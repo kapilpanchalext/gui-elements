@@ -22,7 +22,7 @@ export const SidebarData: SidebarModel[] = [
         icon: 'globe'
     },
     {
-        link: '',
+        link: 's1',
         tabName: 'separator',
         icon: ''
     },

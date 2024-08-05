@@ -21,13 +21,13 @@ const Sidebar = () => {
   return (
     <>
       <div className={`sidenav ${isExpanded ? 'expanded' : ''}`} onDoubleClick={toggleSidebar} style={{ overflow: "auto" }}>
-        {SidebarData.map((item, index) => {
+        {SidebarData.map((item) => {
           let toRender;
 
           if (item.tabName.startsWith("separator")){
-            toRender = <div className="separator"></div>
+            toRender = <div key={item.link} className="separator"></div>
           } else {
-            toRender = <a href={item.link} key={index}><span className="material-symbols-outlined">{item.icon}</span><span className="text">{item.tabName}</span></a>
+            toRender = <a key={item.link} href={item.link} ><span className="material-symbols-outlined">{item.icon}</span><span className="text">{item.tabName}</span></a>
           }
 
           return (toRender)
