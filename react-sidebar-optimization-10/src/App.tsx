@@ -1,11 +1,12 @@
-import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import "../src/components/sidebar/Sidebar.css";
 
 function App() {
 
   return (
     <>
-      <div className="App">
-        <h1>Sidebar</h1>
+      <div className={'dark-mode'}>
+        <Sidebar />
       </div>
     </>
   )
