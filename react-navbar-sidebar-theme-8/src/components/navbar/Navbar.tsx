@@ -21,7 +21,6 @@ const Navbar = () => {
   return (
     <>
       <div>
-        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
         <div className={isResponsive ? `topnav ${activeTheme}` : `topnav responsive ${activeTheme}`}>
           <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
             <h4>LOGO</h4>
@@ -81,23 +80,11 @@ const Navbar = () => {
               onClick={themeHandler}>
               <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{activeTheme === 'dark-mode' ? "dark_mode" : "light_mode"}</span>
             </a>
-
           </div>
-          
-        </div>
-        
-        </div>
-        <div style={{display: "flex", flexDirection: "row", justifyContent: "space-between"}}>
-        <Sidebar />
-        </div>
-
-        <div style={{ paddingLeft: "16px" }}>
-          <h2>Top Navigation Example</h2>
-          <p>Some content..</p>
+          <Sidebar />
         </div>
         
       </div>
-      
     </>
   )
 }

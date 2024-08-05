@@ -34,10 +34,10 @@ body {
 .search {
     display: none;
 }
-.topnav a.icon {
-    float: right;
-    display: block;
-}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -94,7 +94,7 @@ body {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-  }
+}
   
 .dropdown-content {
     display: none;
