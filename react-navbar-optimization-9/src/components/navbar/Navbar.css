@@ -119,3 +119,18 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* width */
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

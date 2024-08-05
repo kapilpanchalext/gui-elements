@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "./Navbar.css";
 import "../../theme/theme.css";
+import { NavbarData } from './utils/NavbarData';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -21,40 +22,26 @@ const Navbar = () => {
     <>
       <div>
         <div className={isResponsive ? `topnav ${activeTheme}` : `topnav responsive ${activeTheme}`}>
-          <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: "100px" }}>
             <h4>LOGO</h4>
           </div>
 
-          <div className={isResponsive ? `topnav section-mid ${activeTheme}` : `topnav section-mid responsive ${activeTheme}`}>
-            <a
-              href="#home"
-              className={activeTab === '#home' ? 'active' : ''}
-              onClick={() => tabClickHandler('#home')}
-              style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <span className="material-symbols-outlined" style={{ fontSize: "24px", marginRight: "8px" }}>home</span>
-              Home
-            </a>
-            <a
-              href="#textEditor"
-              className={activeTab === '#textEditor' ? 'active' : ''}
-              onClick={() => tabClickHandler('#textEditor')}>
-              Text Editor
-            </a>
-            <a
-              href="#contact"
-              className={activeTab === '#contact' ? 'active' : ''}
-              onClick={() => tabClickHandler('#contact')}>
-              Contact
-            </a>
-            <a
-              href="#about"
-              className={activeTab === '#about' ? 'active' : ''}
-              onClick={() => tabClickHandler('#about')}>
-              About
-            </a>
-              <div className='search'>
-                <input className='input' type="text" placeholder="Search.." name="search" />
-              </div>
+          <div className={isResponsive ? `topnav section-mid ${activeTheme}` : `topnav section-mid responsive ${activeTheme}`} style={{overflowX:"auto", overflowY:"hidden"}}>
+            
+            {NavbarData.map((item) => (
+              <a
+                href= {item.link}
+                className={activeTab === item.link ? 'active' : ''}
+                onClick={() => tabClickHandler(item.link)}
+                style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                  <span className="material-symbols-outlined" style={{ fontSize: "24px", marginRight: "8px" }}>{item.icon}</span>
+                  {item.tabName}
+              </a>
+            ))}
+
+            <div className='search'>
+              <input className='input' type="text" placeholder="Search.." name="search" />
+            </div>
             <a className="icon" onClick={() => setIsResponsive(!isResponsive)}>
               <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
             </a>
