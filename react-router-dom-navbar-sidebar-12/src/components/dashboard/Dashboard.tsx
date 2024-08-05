@@ -2,7 +2,9 @@
 
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div style={{height: "100%", display: "flex", backgroundColor: "white"}}>
+        Dashboard
+    </div>
   )
 }
 

@@ -43,7 +43,7 @@ const Sidebar = () => {
         </div>
 
         <div className="main" 
-          style={{ overflow: "auto", flex: 1, height: "100vh", backgroundColor:"var(--primary-100)", color:"var(--secondary-900)" }}>
+          style={{ padding: "0px", overflow: "auto", flex: 1, height: "100%", backgroundColor:"var(--primary-100)", color:"var(--secondary-900)" }}>
             <Outlet />
         </div>
       </div>
