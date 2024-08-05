@@ -1,10 +1,7 @@
-import React from 'react'
 import { Outlet } from 'react-router-dom';
 import BreadCrumb from '../breadcrumb/BreadCrumb';
 
-type Props = {}
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <div>
       <BreadCrumb />

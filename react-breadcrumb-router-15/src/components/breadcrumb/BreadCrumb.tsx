@@ -1,9 +1,7 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import "../../App.css";
 
-type Props = {}
-
-const BreadCrumb = (props: Props) => {
+const BreadCrumb = () => {
   const location = useLocation();
   const navigate = useNavigate();
   

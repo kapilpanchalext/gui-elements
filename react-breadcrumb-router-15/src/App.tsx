@@ -4,7 +4,6 @@ import Home from './components/home/Home';
 import Category from './components/category/Category';
 import SubCategory from './components/subcategory/SubCategory';
 import Types from './components/types/Types';
-import BreadCrumb from './components/breadcrumb/BreadCrumb';
 
 function App() {
 
