@@ -35,28 +35,6 @@ const Navbar = () => {
           </div>
 
           <div className={isResponsive ? `topnav section-mid ${activeTheme}` : `topnav section-mid responsive ${activeTheme}`} style={{overflowX:"auto", overflowY:"hidden"}}>
-            
-            {/* {NavbarData.map((item) => (
-              <a
-                key={item.link}
-                href= {item.link}
-                className={activeTab === item.link ? 'active' : ''}
-                onClick={() => tabClickHandler(item.link)}
-                style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                  <span className="material-symbols-outlined" style={{ fontSize: "24px", marginRight: "8px" }}>{item.icon}</span>
-                  {item.tabName}
-              </a>
-            ))}
-
-            {isSearchExpanded && (
-              <input
-                type="text"
-                className="search-input"
-                placeholder="Search..."
-                style={{ marginLeft: '10px' }}
-              />
-            )} */}
-
             {NavbarData.map((item) => (
             <Fragment key={item.link}>
                 {item.link === '#search2' && isSearchExpanded ? (
@@ -107,16 +85,19 @@ const Navbar = () => {
             </div>
           </div>
 
-            <a style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
-              href="#theme"
-              className={activeTab === '#theme' ? 'active' : ''}
-              onClick={themeHandler}>
-              <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{activeTheme === 'dark-mode' ? "dark_mode" : "light_mode"}</span>
-            </a>
-          </div>
-
-          <Sidebar />
+          <a style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
+            href="#theme"
+            className={activeTab === '#theme' ? 'active' : ''}
+            onClick={themeHandler}>
+            <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{activeTheme === 'dark-mode' ? "dark_mode" : "light_mode"}</span>
+          </a>
         </div>
+      </div>
+      
+      <div className={activeTheme}>
+        <Sidebar />
+      </div>
+        
       </div>
     </>
   )

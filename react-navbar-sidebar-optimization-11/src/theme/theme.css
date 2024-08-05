@@ -56,8 +56,8 @@
     --primary-color: var(--primary-500);
     --secondary-color: var(--secondary-500);
 
-    background-color: var(--primary-100);
-    color: var(--secondary-900);
+    background-color: var(--primary-200);
+    color: var(--secondary-800);
 }
 
 .light-mode, .light-mode a {
@@ -89,16 +89,16 @@
     --primary-color: var(--primary-500);
     --secondary-color: var(--secondary-500);
 
-    background-color: var(--primary-100);
-    color: var(--secondary-900);
+    background-color: var(--primary-200);
+    color: var(--secondary-800);
 }
 
 .dark-mode input {
-    background-color: var(--primary-900);
-    color: var(--secondary-100);
+    background-color: var(--primary-800);
+    color: var(--secondary-200);
 }
 
 .light-mode input {
-    background-color: var(--primary-100);
-    color: var(--secondary-900);
+    background-color: var(--primary-200);
+    color: var(--secondary-800);
 }
