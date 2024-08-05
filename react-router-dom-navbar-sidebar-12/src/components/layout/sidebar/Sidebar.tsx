@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "../sidebar/Sidebar.css";
 import "../../../theme/theme.css";
 import { SidebarData } from './utils/SidebarData';
+import { Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -41,9 +42,9 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="main" style={{ overflow: "auto", flex: 1, height: "100vh", backgroundColor:"var(--primary-100)", color:"var(--secondary-900)" }}>
-          <h1>Main Content Area</h1>
-          <p>Your content goes here...</p>
+        <div className="main" 
+          style={{ overflow: "auto", flex: 1, height: "100vh", backgroundColor:"var(--primary-100)", color:"var(--secondary-900)" }}>
+            <Outlet />
         </div>
       </div>
     </>

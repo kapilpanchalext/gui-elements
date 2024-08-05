@@ -18,7 +18,6 @@ const Navbar = () => {
       } else {
         setIsSearchExpanded(false);
       }
-  
       setActiveTab(tab);
     };
 
@@ -28,47 +27,46 @@ const Navbar = () => {
 
   return (
     <>
-      <div>
-        <div className={isResponsive ? `topnav ${activeTheme}` : `topnav responsive ${activeTheme}`}>
-          <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: "100px" }}>
-            <h4>LOGO</h4>
-          </div>
+      <div className={isResponsive ? `topnav ${activeTheme}` : `topnav responsive ${activeTheme}`}>
+        <div className='section-start' style={{ display: "flex", alignItems: "center", justifyContent: "center", minWidth: "100px" }}>
+          <h4>LOGO</h4>
+        </div>
 
-          <div className={isResponsive ? `topnav section-mid ${activeTheme}` : `topnav section-mid responsive ${activeTheme}`} style={{overflowX:"auto", overflowY:"hidden"}}>
-            {NavbarData.map((item) => (
+        <div className={isResponsive ? `topnav section-mid ${activeTheme}` : `topnav section-mid responsive ${activeTheme}`} style={{overflowX:"auto", overflowY:"hidden"}}>
+          {NavbarData.map((item) => (
             <Fragment key={item.link}>
-                {item.link === '#search2' && isSearchExpanded ? (
-                  <input
-                    type="search"
-                    className="input"
-                    placeholder="Search..."
-                    style={{ marginLeft: '10px' }}
-                  />
-                ) : (
-                  <a
-                    href={item.link}
-                    className={activeTab === item.link ? 'active' : ''}
-                    onClick={() => tabClickHandler(item.link)}
-                    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+              {item.link === '#search2' && isSearchExpanded ? (
+                <input
+                  type="search"
+                  className="input"
+                  placeholder="Search..."
+                  style={{ marginLeft: '10px' }}
+                />
+              ) : (
+                <a
+                  href={item.link}
+                  className={activeTab === item.link ? 'active' : ''}
+                  onClick={() => tabClickHandler(item.link)}
+                  style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                >
+                  <span
+                    className="material-symbols-outlined"
+                    style={{ fontSize: '24px', marginRight: '8px' }}
                   >
-                    <span
-                      className="material-symbols-outlined"
-                      style={{ fontSize: '24px', marginRight: '8px' }}
-                    >
-                      {item.icon}
-                    </span>
-                    {item.tabName}
-                  </a>
-                )}
-              </Fragment>
-            ))}
+                    {item.icon}
+                  </span>
+                  {item.tabName}
+                </a>
+              )}
+            </Fragment>
+          ))}
 
-            <a className="icon" onClick={() => setIsResponsive(!isResponsive)}>
-              <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
-            </a>
-          </div>
+          <a className="icon" onClick={() => setIsResponsive(!isResponsive)}>
+            <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
+          </a>
+        </div>
 
-          <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center", minWidth: "200px"}}>
+        <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center", minWidth: "200px"}}>
 
           <div className="dropdown">
             <a href="#menu" className="dropicon">
@@ -93,11 +91,9 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      
+    
       <div className={activeTheme}>
         <Sidebar />
-      </div>
-        
       </div>
     </>
   )
