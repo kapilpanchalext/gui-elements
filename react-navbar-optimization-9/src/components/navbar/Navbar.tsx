@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react';
 import "./Navbar.css";
 import "../../theme/theme.css";
-import { NavbarData } from './utils/NavbarData';
+import { MenuData, NavbarData } from './utils/NavbarData';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -89,16 +89,20 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
+          <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center", minWidth: "200px"}}>
 
           <div className="dropdown">
             <a href="#menu" className="dropicon">
               <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>arrow_drop_down</span>
             </a>
             <div className="dropdown-content">
-              <a href="#login">Login</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              {MenuData.map((item) => (
+                <a key={item.link} href={item.link}><span
+                  className="material-symbols-outlined"
+                  style={{ fontSize: '24px', marginRight: '8px' }}
+              > {item.icon}
+              </span>{item.tabName}</a>
+              ))}
             </div>
           </div>
 

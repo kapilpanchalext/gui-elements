@@ -122,3 +122,16 @@ export const NavbarData: NavbarModel[] = [
         icon: 'globe'
     },
 ]
+
+export const MenuData: NavbarModel[] = [
+    {
+        link: '#login',
+        tabName: 'Login',
+        icon: 'login'
+    },
+    {
+        link: '#register',
+        tabName: 'Register',
+        icon: 'person_add'
+    },
+]
