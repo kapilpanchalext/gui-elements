@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <h1>React Theme 1</h1>
+      <h1>React Theme - Black</h1>
     </>
   )
 }
