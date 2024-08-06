@@ -113,7 +113,7 @@ body {
 }
   
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: var(--primary-300);
 }
 
 .dropdown:hover .dropdown-content {
@@ -132,5 +132,5 @@ body {
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--primary-800);
 }

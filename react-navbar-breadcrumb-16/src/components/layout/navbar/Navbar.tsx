@@ -3,6 +3,7 @@ import "./Navbar.css";
 import "../../../theme/theme.css";
 import { MenuData, NavbarData } from './utils/NavbarData';
 import Sidebar from '../sidebar/Sidebar';
+import BreadCrumb from '../breadcrumb/BreadCrumb';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -90,6 +91,10 @@ const Navbar = () => {
             <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{activeTheme === 'dark-mode' ? "dark_mode" : "light_mode"}</span>
           </a>
         </div>
+      </div>
+
+      <div className={activeTheme}>
+        <BreadCrumb />
       </div>
     
       <div className={activeTheme}>
