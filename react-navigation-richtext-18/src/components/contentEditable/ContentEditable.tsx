@@ -62,7 +62,7 @@ const ContentEditable = forwardRef<ForwardRichTextData, Props>(({onCustomPaste, 
       contentEditable={isReadonly}
       style={{
               border: `1px solid #525252`, 
-              backgroundColor: 'white', 
+              backgroundColor: 'transparent', 
               padding: '10px', 
               width: '100%',
               borderRadius: '10px', 

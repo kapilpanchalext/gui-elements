@@ -26,14 +26,14 @@
 .flex-container-row {
   display: flex;
   align-items: stretch;
-  background-color: #f1f1f1;
+  background-color: transparent;
   flex-direction: row;
 }
 
 .flex-container-column {
   display: flex;
   align-items: stretch;
-  background-color: #f1f1f1;
+  background-color: transparent;
   flex-direction: column;
 }
   
