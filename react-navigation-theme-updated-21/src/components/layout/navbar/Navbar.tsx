@@ -4,7 +4,7 @@ import "../../../theme/theme.css";
 import { MenuData, NavbarData } from './utils/NavbarData';
 import Sidebar from '../sidebar/Sidebar';
 import BreadCrumb from '../breadcrumb/BreadCrumb';
-import Toast from '../../toast/Toast';
+import Badge from '../../badge/Badge';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -59,7 +59,7 @@ const Navbar = () => {
                     
                   </span>
                   
-                  {item.tabName} <Toast toastText={item.tabName}/>
+                  {item.tabName} <Badge badgeText={item.tabName}/>
                 </a>
               )}
             </Fragment>
@@ -105,6 +105,6 @@ const Navbar = () => {
       </div>
     </>
   )
-}
+};
 
 export default Navbar;
