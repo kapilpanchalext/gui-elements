@@ -4,6 +4,7 @@ import "../../../theme/theme.css";
 import { MenuData, NavbarData } from './utils/NavbarData';
 import Sidebar from '../sidebar/Sidebar';
 import BreadCrumb from '../breadcrumb/BreadCrumb';
+import Toast from '../../toast/Toast';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -55,8 +56,10 @@ const Navbar = () => {
                     style={{ fontSize: '24px', marginRight: '8px' }}
                   >
                     {item.icon}
+                    
                   </span>
-                  {item.tabName}
+                  
+                  {item.tabName} <Toast toastText={item.tabName}/>
                 </a>
               )}
             </Fragment>

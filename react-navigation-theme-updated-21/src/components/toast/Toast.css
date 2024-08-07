@@ -1,0 +1,14 @@
+.toast {
+    position: relative;
+    display: flex;
+    top: -10px;
+    left: 5px;
+    border-radius: 5px;
+    height: 20px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-700);
+    color: var(--accent-50);
+    font-size: x-small;
+}
