@@ -4,7 +4,11 @@ import "../../../theme/theme.css";
 import { SidebarData } from './utils/SidebarData';
 import { Outlet } from 'react-router-dom';
 
-const Sidebar = () => {
+type Props = {
+  activeTheme: string;
+};
+
+const Sidebar = ({activeTheme}: Props) => {
 
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -42,8 +46,8 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="main" 
-          style={{ padding: "0px", overflow: "auto", flex: 1, height: "100%", backgroundColor:"var(--primary-100)", color:"var(--secondary-900)" }}>
+        <div className={`main ${activeTheme === "dark-mode" ? "dark-mode-outlet" : "light-mode-outlet"}`} 
+          style={{ padding: "0px", overflow: "auto", flex: 1, height: "100%" }}>
             <Outlet />
         </div>
       </div>

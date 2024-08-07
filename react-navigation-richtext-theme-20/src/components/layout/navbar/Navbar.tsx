@@ -98,7 +98,7 @@ const Navbar = () => {
       </div>
     
       <div className={activeTheme}>
-        <Sidebar />
+        <Sidebar activeTheme={activeTheme}/>
       </div>
     </>
   )

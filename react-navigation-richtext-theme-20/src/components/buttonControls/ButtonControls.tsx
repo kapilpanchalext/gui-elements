@@ -178,7 +178,7 @@ const ButtonControls = ({ data, isReadonly, setIsReadonly, getKeyWords, updateTO
                 inputTypes = <button key={key} title={cmd.description} onClick={() => setIsReadonly(!isReadonly)}><span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{isReadonly ? cmd.icon : "done_all"}</span></button>
               }
               else {
-                inputTypes = <button style={{backgroundColor: "transparent", color: "white"}} key={key} title={cmd.description} onClick={() => applyExecCommandHandler(key, String(cmd.value))}><span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{cmd.icon}</span></button>
+                inputTypes = <button style={{backgroundColor: "transparent", borderWidth: "1px", borderColor: "var(--neutral-600)", borderStyle: "solid"}} key={key} title={cmd.description} onClick={() => applyExecCommandHandler(key, String(cmd.value))}><span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{cmd.icon}</span></button>
               }
               return (inputTypes)
             })}

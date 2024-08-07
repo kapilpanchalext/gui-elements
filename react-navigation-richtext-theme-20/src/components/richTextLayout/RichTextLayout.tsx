@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useMemo, useCallback, ChangeEvent } from "react";
 import ButtonControls from "../buttonControls/ButtonControls";
 import ContentEditable, { ForwardRichTextData } from "../contentEditable/ContentEditable";
-import "./RichTextModule.css";
+import "./RichText.css";
 import ZoomControls from "../../zoomControls/ZoomControls";
 import TableOfContents from "../tableOfContents/TableOfContents";
 import { Match } from "../../model/Data_Model";
