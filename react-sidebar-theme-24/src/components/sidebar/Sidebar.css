@@ -1,0 +1,67 @@
+@import url("../../theme/theme.css");
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.button {
+    background-color: var(--primary-700);
+    color: var(--white);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+button.res-icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    a:not(:first-child),
+    button:not(:first-child),
+    .search {
+        display: none;
+    }
+
+    button.res-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .responsive {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .responsive .res-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .responsive a:not(:first-child), 
+    .responsive button:not(:first-child),
+    .responsive .search {
+        display: block;
+        text-align: left;
+    }
+
+    .responsive button,
+    .responsive .search {
+        float: none;
+    }
+}
