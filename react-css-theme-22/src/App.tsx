@@ -19,7 +19,7 @@ function App() {
       <button className="link">This is a link button</button>
       <div className="badge shake">Badge</div>
       <button className="primary large"
-      onClick={() => setActiveTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))}>Theme</button>
+        onClick={() => setActiveTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))}><span className="material-symbols-outlined" style={{ fontSize: "24px", color: activeTheme === "dark" ? "black" : "white" }}>{ activeTheme === "dark" ? "dark_mode" : "light_mode" }</span></button>
     </div>
     </>
   )
