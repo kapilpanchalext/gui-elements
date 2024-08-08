@@ -29,9 +29,6 @@ const Navbar = () => {
           </button>
 
         </div>
-
-        {/* <div className="misc">
-        </div> */}
       </div>
     </>
   )
