@@ -1,0 +1,74 @@
+@import url("../../theme/theme.css");
+
+/* CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.button {
+    background-color: var(--primary-700);
+    color: var(--white);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+.navbar a:not(:first-child),
+.search {
+    display: none;
+}
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.responsive {
+    position: relative;
+    flex-direction: column;
+}
+.navbar.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+}
+.navbar.responsive a,
+    .navbar.responsive .search {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.links {
+    flex-grow: 8;
+}
+
+.misc {
+    flex-grow: 1;
+}
+
+.navbar a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--fontColor);
+}
