@@ -1,12 +1,3 @@
-@import url("../../theme/theme.css");
-
-/* CSS Reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -15,8 +6,8 @@ body {
     overflow: hidden;
   }
   
-  .sidenav {
-    height: 90vh;
+  .sidebar {
+    height: 100%;
     width: 60px;
     position: absolute;
     z-index: 1;
@@ -30,21 +21,21 @@ body {
     flex-direction: column;
   }
   
-  .sidenav .content {
+  .sidebar .content {
     flex: 1;
     display: flex;
     flex-direction: column;
   }
   
-  .sidenav .bottom-content {
+  .sidebar .bottom-content {
     margin-top: auto;
   }
   
-  .sidenav.expanded {
+  .sidebar.expanded {
     width: 200px;
   }
   
-  .sidenav a {
+  .sidebar a {
     padding: 10px 10px 10px 16px;
     text-decoration: none;
     font-size: 18px;
@@ -55,23 +46,23 @@ body {
     white-space: nowrap;
   }
   
-  .sidenav a .material-symbols-outlined {
+  .sidebar a .material-symbols-outlined {
     font-size: 20px;
     margin-right: 10px;
   }
   
-  .sidenav .text {
+  .sidebar .text {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     white-space: nowrap;
     overflow: hidden;
   }
   
-  .sidenav.expanded .text {
+  .sidebar.expanded .text {
     opacity: 1;
   }
   
-  .sidenav a:hover {
+  .sidebar a:hover {
     color: var(--neutral-200);
   }
   
@@ -88,12 +79,12 @@ body {
     transition: margin-left 0.3s;
   }
   
-  .sidenav.expanded ~ .main {
+  .sidebar.expanded ~ .main {
     margin-left: 200px;
   }
   
   @media screen and (max-height: 450px) {
-    .sidenav a { font-size: 18px; }
+    .sidebar a { font-size: 18px; }
   }
   
   ::-webkit-scrollbar {

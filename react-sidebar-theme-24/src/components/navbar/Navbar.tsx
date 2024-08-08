@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { ActiveThemeContext } from "../../store/ActiveThemeContext";
 import "./Navbar.css";
+import Sidebar from "../sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const Navbar = () => {
   const {theme, toggleTheme} = useContext(ActiveThemeContext);
@@ -27,7 +29,6 @@ const Navbar = () => {
           <button className="res-icon link" onClick={() => setIsResponsive(!isResponsive)}>
             <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
           </button>
-
         </div>
       </div>
     </>
