@@ -10,7 +10,6 @@ function App() {
     <>
       <div data-app-theme={theme}>
         <Navbar />
-        <Side
       </div>
     </>
   )

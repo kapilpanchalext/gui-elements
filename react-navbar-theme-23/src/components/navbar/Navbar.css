@@ -67,14 +67,14 @@ button.res-icon {
 }
 
 
-.logo {
+/* .logo {
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.main {
+.pages {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,14 +82,14 @@ button.res-icon {
     position: relative;
 }
 
-.main a {
+.pages a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 17px;
     color: var(--fontColor);
 }
 
-.main .link {
+.pages .link {
     position: absolute;
     right: 0;
 }
