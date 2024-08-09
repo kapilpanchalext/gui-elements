@@ -1,0 +1,35 @@
+@import url("../../theme/theme.css");
+
+nav {
+    border-top: 1px solid var(--neutral-100);
+    padding: 5px 5px 5px 200px;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a {
+    display: inline-block;
+    color: var(--primary-500);
+    content: '>';
+    font-size: 100%;
+    font-weight: bold;
+    padding: 0 3px;
+    font-style: italic;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: var(--primary-500);
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+    font-style: italic;
+}
