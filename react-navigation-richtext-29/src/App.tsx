@@ -17,7 +17,7 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Navigate to="/richtext" replace />,
+          element: <Navigate to="/home" replace />,
         },
         {
           path: '/richtext',
@@ -38,6 +38,7 @@ function App() {
       ]
     },
   ]);
+
   return (
     <>
       <div data-app-theme={theme}>
