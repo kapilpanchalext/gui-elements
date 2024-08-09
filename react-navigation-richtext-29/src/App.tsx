@@ -4,6 +4,7 @@ import './App.css'
 import Home from './components/home/Home';
 import RootLayout from './components/rootlayout/RootLayout';
 import { ActiveThemeContext } from './store/ActiveThemeContext';
+import RichTextLayout from './components/richTextLayout/RichTextLayout';
 
 function App() {
   const {theme} = useContext(ActiveThemeContext);
@@ -16,7 +17,11 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Navigate to="/home" replace />,
+          element: <Navigate to="/richtext" replace />,
+        },
+        {
+          path: '/richtext',
+          element: <RichTextLayout layoutHeight={800} />
         },
         {
           path: '/home',

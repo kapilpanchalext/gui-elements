@@ -1,0 +1,6 @@
+@import url("../../theme/theme.css");
+@supports (zoom: 1) {
+    .zoom-notice {
+      display: none;
+    }
+  }
