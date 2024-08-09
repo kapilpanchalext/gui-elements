@@ -11,9 +11,11 @@ const RootLayout = () => {
         <Navbar />
         <Breadcrumb />
       </header>
+
       <aside className="sidebar">
         <Sidebar />
       </aside>
+
       <main className="pages">
         <Outlet />
       </main>

@@ -120,6 +120,7 @@ const RichTextLayout = ({layoutHeight}: Props) => {
   }, [richTextData.current, results]);
   
   highlightText();
+  
 
   return (
     <>
