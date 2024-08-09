@@ -4,6 +4,7 @@ import "../../../theme/theme.css";
 import { MenuData, NavbarData } from './utils/NavbarData';
 import Sidebar from '../sidebar/Sidebar';
 import BreadCrumb from '../breadcrumb/BreadCrumb';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     // State to keep track of the active tab
@@ -44,8 +45,8 @@ const Navbar = () => {
                   style={{ marginLeft: '10px' }}
                 />
               ) : (
-                <a
-                  href={item.link}
+                <Link
+                  to={item.link}
                   className={activeTab === item.link ? 'active' : ''}
                   onClick={() => tabClickHandler(item.link)}
                   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
@@ -57,39 +58,39 @@ const Navbar = () => {
                     {item.icon}
                   </span>
                   {item.tabName}
-                </a>
+                </Link>
               )}
             </Fragment>
           ))}
 
-          <a className="icon" onClick={() => setIsResponsive(!isResponsive)}>
+          <Link to="" className="icon" onClick={() => setIsResponsive(!isResponsive)}>
             <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>menu</span>
-          </a>
+          </Link>
         </div>
 
         <div className='section-end' style={{display: "flex", alignItems: "center", justifyContent: "center", minWidth: "200px"}}>
 
           <div className="dropdown">
-            <a href="#menu" className="dropicon">
+            <Link to="#menu" className="dropicon">
               <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>arrow_drop_down</span>
-            </a>
+            </Link>
             <div className="dropdown-content">
               {MenuData.map((item) => (
-                <a key={item.link} href={item.link}><span
+                <Link key={item.link} to={item.link}><span
                   className="material-symbols-outlined"
                   style={{ fontSize: '24px', marginRight: '8px' }}
               > {item.icon}
-              </span>{item.tabName}</a>
+              </span>{item.tabName}</Link>
               ))}
             </div>
           </div>
 
-          <a style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
-            href="#theme"
+          <Link style={{ marginLeft: "auto", display: "flex", alignItems: "center" }}
+            to="#theme"
             className={activeTab === '#theme' ? 'active' : ''}
             onClick={themeHandler}>
             <span className="material-symbols-outlined" style={{ fontSize: "24px" }}>{activeTheme === 'dark-mode' ? "dark_mode" : "light_mode"}</span>
-          </a>
+          </Link>
         </div>
       </div>
 

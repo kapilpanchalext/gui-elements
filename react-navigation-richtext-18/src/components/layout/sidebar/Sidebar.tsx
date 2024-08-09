@@ -2,7 +2,7 @@ import { useState } from 'react';
 import "../sidebar/Sidebar.css";
 import "../../../theme/theme.css";
 import { SidebarData } from './utils/SidebarData';
-import { Outlet } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const Sidebar = () => {
 
@@ -38,7 +38,7 @@ const Sidebar = () => {
           </div>
           <div className="bottom-content">
             <div className="separator"></div>
-            <a href="#envelope"><span className="material-symbols-outlined">account_circle</span><span className="text">UserName</span></a>
+            <Link to="#envelope"><span className="material-symbols-outlined">account_circle</span><span className="text">UserName</span></Link>
           </div>
         </div>
 

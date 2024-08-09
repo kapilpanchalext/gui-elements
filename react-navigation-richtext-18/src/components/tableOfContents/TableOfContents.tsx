@@ -1,4 +1,5 @@
 import { ReactElement, ReactNode, createElement, isValidElement } from "react";
+import { Link } from "react-router-dom";
 
 type Props = {
   rawData?: string;
@@ -68,9 +69,9 @@ const TableOfContents = ({rawData}: Props) => {
             style={{ zoom: 0.75, maxHeight: '500px', overflow: 'hidden', overflowWrap: 'break-word', marginBottom: '20px' }}>
               <legend> {isValidElement(chunk) && typeof chunk.type === 'string' ? TagDisplayNameMap[chunk.type] : 'Unknown'}</legend>
               <div>
-                <a href={`#header-${index}`} key={index} style={{ display: 'block', marginBottom: '10px' }}>
+                <Link to={`#header-${index}`} key={index} style={{ display: 'block', marginBottom: '10px' }}>
                     {chunk}
-                </a>
+                </Link>
               </div>
           </fieldset>
         ))}

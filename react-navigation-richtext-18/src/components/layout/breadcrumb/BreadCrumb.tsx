@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './BreadCrumb.css';
 
 // type Props = {}
@@ -19,7 +19,7 @@ const BreadCrumb = () => {
       <ul>
         {pathnames.length > 0 ? (
           <li>
-            <a href="#" onClick={() => handleClick('/')}>Dashboard</a>
+            <Link to="#" onClick={() => handleClick('/')}>Dashboard</Link>
           </li>
         ) : (
           <li>
@@ -36,14 +36,12 @@ const BreadCrumb = () => {
             </li>
           ) : (
             <li key={to}>
-              <a href="#" onClick={() => handleClick(to)}>{value}</a>
+              <Link to="#" onClick={() => handleClick(to)}>{value}</Link>
             </li>
           );
         })}
       </ul>
     </nav>
-
-
   )
 }
 

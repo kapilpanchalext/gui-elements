@@ -13,7 +13,7 @@ function App() {
       children: [
         {
           path: '/',
-          element: <Navigate to="/dashboard" replace />,
+          element: <Navigate to="/richtext" replace />,
         },
         {
           path: '/dashboard',
