@@ -1,0 +1,48 @@
+@import url("../../theme/theme.css");
+
+/* .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-nav {
+    background-color: #333;
+    color: rgb(75, 48, 48);
+    padding: 10px;
+    text-align: center;
+} */
+
+/* .content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+} */
+
+.side-nav {
+    background-color: #333;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    min-height: 100vh;
+}
+  
+.pages {
+    display: flex;
+    padding: 2px;
+    overflow-y: auto;
+
+}
+
+aside {
+    width: 50%;
+    float: left;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+  
+aside > p, aside li {
+    margin: 0.5rem;
+}
