@@ -4,6 +4,7 @@ import RootLayout from './component/layout/RootLayout';
 import Home from './component/home/Home';
 import Contact from './component/contact/Contact';
 import About from './component/about/About';
+import MainContent from './component/maincontent/MainContent';
 
 function App() {
   const router = createBrowserRouter([
@@ -18,7 +19,7 @@ function App() {
         },
         {
           path: '/home',
-          element: <Home/>
+          element: <MainContent />
         },
         {
           path: '/contact',
