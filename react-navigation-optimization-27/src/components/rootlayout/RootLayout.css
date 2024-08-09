@@ -1,0 +1,22 @@
+@import url("../../theme/theme.css");
+
+.sidebar {
+    padding: 15px;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+  
+.pages {
+    display: flex;
+    padding: 2px;
+    overflow-y: auto;
+}
+
+aside {
+    float: left;
+    font-style: italic;
+}
+  
+aside > p, aside li {
+    margin: 0.25rem;
+}
