@@ -1,7 +1,8 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Breadcrumb.css";
+import { memo } from 'react';
 
-const Breadcrumb = () => {
+const Breadcrumb = memo(() => {
   const location = useLocation();
   const navigate = useNavigate();
   
@@ -40,6 +41,6 @@ const Breadcrumb = () => {
       </ol>
     </nav>
   )
-}
+});
 
 export default Breadcrumb;
