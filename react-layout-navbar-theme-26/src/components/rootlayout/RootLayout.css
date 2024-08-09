@@ -1,7 +1,6 @@
 @import url("../../theme/theme.css");
 
 .sidebar {
-    width: 200px;
     padding: 15px;
     overflow-y: auto;
     min-height: 100vh;
@@ -14,7 +13,6 @@
 }
 
 aside {
-    width: 50%;
     float: left;
     font-style: italic;
 }
