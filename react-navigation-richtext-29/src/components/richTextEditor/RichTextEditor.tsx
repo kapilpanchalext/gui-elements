@@ -7,6 +7,7 @@ type Props = {
 
 const RichTextEditor = ({layoutHeight}: Props) => {
   log("<RichTextEditor /> rendered");
+  
   return (
     <>
       <RichTextLayout layoutHeight={layoutHeight} />

@@ -17,11 +17,11 @@ const Breadcrumb = memo(() => {
       <ol>
         {pathnames.length > 0 ? (
           <li className="crumb">
-            <Link to="" onClick={() => handleClick('/')}>Home</Link>
+            <Link to="" onClick={() => handleClick('/')}>{pathnames}</Link>
           </li>
         ) : (
           <li className="crumb">
-            Home
+            {pathnames}
           </li>
         )}
         {pathnames.map((value, index) => {

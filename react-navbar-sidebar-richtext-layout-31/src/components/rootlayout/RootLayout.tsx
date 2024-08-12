@@ -1,8 +1,8 @@
-import Navbar from '../navbar/Navbar';
+import Navbar from './navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import "./RootLayout.css";
-import Sidebar from '../sidebar/Sidebar';
-import Breadcrumb from '../breadcrumb/Breadcrumb';
+import Sidebar from './sidebar/Sidebar';
+import Breadcrumb from './breadcrumb/Breadcrumb';
 
 const RootLayout = () => {
   return (

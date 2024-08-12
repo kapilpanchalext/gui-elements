@@ -1,0 +1,40 @@
+@import url("../../../theme/theme.css");
+
+.rich-text-layout {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    width: 100%;
+    background-color: var(--backgroundThemeColor);
+    border: 1px solid var(--neutral-200);
+    position: sticky;
+    margin-bottom: 100px;
+}
+
+.table-of-contents {
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    width: 15%;
+    background-color: var(--backgroundThemeColor);
+    border: 1px solid var(--neutral-200);
+    position: sticky;
+    margin-bottom: 100px;
+}
+
+.editor-content {
+    display: flex;
+    flex-grow: 8;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    width: 85%;
+    background-color: var(--backgroundThemeColor);
+    border: 1px solid var(--neutral-200);
+    position: sticky;
+    margin-bottom: 100px;
+}

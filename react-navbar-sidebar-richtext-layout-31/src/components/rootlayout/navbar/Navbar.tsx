@@ -1,5 +1,5 @@
 import { memo, useContext, useState } from "react";
-import { ActiveThemeContext } from "../../store/ActiveThemeContext";
+import { ActiveThemeContext } from "../../../store/ActiveThemeContext";
 import "./Navbar.css";
 
 const Navbar = memo(() => {
