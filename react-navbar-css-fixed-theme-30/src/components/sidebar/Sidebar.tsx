@@ -3,7 +3,6 @@ import "./Sidebar.css";
 import { memo, useState } from 'react';
 import { SidebarData } from './utils/SidebarData';
 
-
 const Sidebar = memo(() => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
