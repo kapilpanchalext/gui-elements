@@ -1,4 +1,5 @@
 import { RefObject, useCallback, useEffect } from 'react';
+import log from '../../log';
 
 type Props = {
     draggableRef: RefObject<HTMLDivElement>
@@ -7,6 +8,7 @@ type Props = {
 }
 
 const useFloatingToolbar = ({draggableRef, closeButtonRef, showColorPicker}: Props) => {
+  log("<useFloadingToolbar /> rendered");
     const makeDraggable = useCallback((element: HTMLElement) => {
         let offsetX: number, offsetY: number;
         let isDragging = false;

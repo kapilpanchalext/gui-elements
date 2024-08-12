@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom';
 import "./Sidebar.css";
 import { memo, useState } from 'react';
 import { SidebarData } from './utils/SidebarData';
+import log from '../../log';
 
 
 const Sidebar = memo(() => {
+    log("<Sidebar /> rendered");
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
     const toggleSidebar = () => {

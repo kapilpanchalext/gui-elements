@@ -1,3 +1,4 @@
+import log from '../../log';
 import RichTextLayout from '../richTextLayout/RichTextLayout';
 
 type Props = {
@@ -5,7 +6,7 @@ type Props = {
 }
 
 const RichTextEditor = ({layoutHeight}: Props) => {
-
+  log("<RichTextEditor /> rendered");
   return (
     <>
       <RichTextLayout layoutHeight={layoutHeight} />

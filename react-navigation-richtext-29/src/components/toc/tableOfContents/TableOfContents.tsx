@@ -16,7 +16,7 @@ const TagDisplayNameMap: { [key: string]: string } = {
 };
 
 const TableOfContents = ({rawData}: Props) => {
-  log("<TableOfContents /> rendered");
+  log("<TableOfContentsTOC /> rendered");
 
   const parseHtmlToReact = (htmlString: string): ReactNode[] => {
     const template = document.createElement('template');

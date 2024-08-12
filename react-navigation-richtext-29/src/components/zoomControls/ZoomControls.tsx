@@ -1,5 +1,6 @@
 import { ChangeEvent } from 'react';
 import './ZoomControlsModule.css';
+import log from '../../log';
 
 type Props = {
   zoomValue: number;
@@ -8,7 +9,7 @@ type Props = {
 }
 
 const ZoomControls = ({zoomValue, setZoomValue, setZoomLevel}: Props) => {
-
+  log("<ZoomControls /> rendered");
   const onDoubleClickChangeZoomValueHandler = () => {
     const element = document.getElementById("zoomRangeId") as HTMLInputElement | null;
     if (element) {

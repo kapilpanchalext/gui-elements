@@ -6,12 +6,14 @@ import ZoomControls from "../zoomControls/ZoomControls";
 import TableOfContents from "../tableOfContents/TableOfContents";
 import { Match } from "../../model/Data_Model";
 import useSearchText from "../../hooks/useSearchText";
+import log from "../../log";
 
 type Props = {
   layoutHeight: number;
 }
 
 const RichTextLayout = ({layoutHeight}: Props) => {
+  log("<RichTextLayout /> rendered");
   const [data, setData] = useState<string>(''); //Data to be sent to backend
   const [isReadonly, setIsReadonly] = useState<boolean>(true);
   const richTextData = useRef<ForwardRichTextData>(null);

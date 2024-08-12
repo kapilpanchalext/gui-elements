@@ -1,8 +1,10 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import "./Breadcrumb.css";
 import { memo } from 'react';
+import log from '../../log';
 
 const Breadcrumb = memo(() => {
+  log("<BreadCrumb /> rendered");
   const location = useLocation();
   const navigate = useNavigate();
   

@@ -2,8 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 import { ForwardRichTextData } from '../contentEditable/ContentEditable';
 import TableOfContents from './tableOfContents/TableOfContents';
 import ContentEditable from './contentEditable/ContentEditable';
+import log from '../../log';
 
 const Toc = () => {
+    log("<TOC /> rendered");
     const richTextDataRef = useRef<ForwardRichTextData>(null);
     const [isContentEditableEvent, setIsContentEditableEvent] = useState<boolean>(false);
     const [data, setData] = useState<string>('');

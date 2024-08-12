@@ -5,9 +5,11 @@ import Home from './components/home/Home';
 import RootLayout from './components/rootlayout/RootLayout';
 import { ActiveThemeContext } from './store/ActiveThemeContext';
 import RichTextLayout from './components/richTextLayout/RichTextLayout';
-import Toc from './components/toc/TOC';
+import log from './log';
+import Toc from './components/toc/Toc';
 
 function App() {
+  log("<App /> rendered");
   const {theme} = useContext(ActiveThemeContext);
 
   const router = createBrowserRouter([

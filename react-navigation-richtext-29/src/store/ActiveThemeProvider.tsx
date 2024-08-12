@@ -1,11 +1,13 @@
 import { ReactNode, useState } from 'react';
 import { ActiveThemeContext } from './ActiveThemeContext';
+import log from '../log';
 
 type Props = {
     children: ReactNode;
 }
 
 const ActiveThemeProvider = ({children}: Props) => {
+  log("<ActiveThemeProvider /> rendered");
     const[theme, setTheme] = useState<string>("light");
 
     const toggleTheme = () => {

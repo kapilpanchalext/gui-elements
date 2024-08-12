@@ -3,6 +3,7 @@ import { CMD, CMD_MAP } from '../../utils/Commands';
 import { FONT_SIZE_MAP, FontNames, FontSize } from '../../utils/FontNames';
 import useFloatingToolbar from '../../hooks/floatingtoolbar/useFloatingToolbar';
 import { DownloadFile } from './downloadFile/DownloadFile';
+import log from '../../log';
 
 type Props = {
   data: string;
@@ -13,6 +14,7 @@ type Props = {
 }
 
 const ButtonControls = ({ data, isReadonly, setIsReadonly, getKeyWords, updateTOC }: Props) => {
+  log("<ButtonControls /> rendered");
   const [showColorPicker, setShowColorPicker] = useState<boolean>(false);
   const [fontColor, setFontColor] = useState<boolean>(false);
   const draggableRef = useRef<HTMLDivElement>(null);

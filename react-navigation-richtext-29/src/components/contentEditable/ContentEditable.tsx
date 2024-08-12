@@ -1,5 +1,6 @@
 import { forwardRef, useImperativeHandle, useRef, KeyboardEvent } from 'react';
 import "./ContentEditableModule.css";
+import log from '../../log';
 
 type Props = {
   isReadonly: boolean;
@@ -15,6 +16,7 @@ export interface ForwardRichTextData {
 }
 
 const ContentEditable = forwardRef<ForwardRichTextData, Props>(({onCustomPaste, isReadonly, zoomValue, ...props}: Props, ref) => {
+  log("<ContentEditable /> rendered");
   const contentEditableRef = useRef<HTMLDivElement>(null);
   contentEditableRef.current?.focus();
   

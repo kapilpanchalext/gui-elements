@@ -1,8 +1,10 @@
 import { memo, useContext, useState } from "react";
 import { ActiveThemeContext } from "../../store/ActiveThemeContext";
 import "./Navbar.css";
+import log from "../../log";
 
 const Navbar = memo(() => {
+  log("<Navbar /> rendered");
   const {theme, toggleTheme} = useContext(ActiveThemeContext);
   const [isResponsive, setIsResponsive] = useState<boolean>(false);
 

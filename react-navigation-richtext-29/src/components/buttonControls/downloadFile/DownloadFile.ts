@@ -1,9 +1,11 @@
+import log from "../../../log";
+
 type Props = {
   data: string
 }
 
 export const DownloadFile = ({data}: Props) => {
-
+  log("<DownloadFile /> rendered");
   console.log("DownloadFile: ", data);
 
   if (data) {

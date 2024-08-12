@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react'
 import DFA from '../algorithm/DFA';
 import { Match } from '../model/Data_Model';
+import log from '../log';
 
 type Props = {
     keywords: string[];
@@ -9,6 +10,7 @@ type Props = {
 }
 
 const useSearchText = ({keywords, text}: Props) => {
+    log("<useSearchText /> rendered");
     const dfa = DFA();
     const searchResults = useRef<Match[]>();
     const searchText = useCallback(() => {

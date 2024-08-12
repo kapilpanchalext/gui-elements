@@ -3,8 +3,10 @@ import { Outlet } from 'react-router-dom';
 import "./RootLayout.css";
 import Sidebar from '../sidebar/Sidebar';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
+import log from '../../log';
 
 const RootLayout = () => {
+  log("<RootLayout /> rendered");
   return (
     <>
       <header>

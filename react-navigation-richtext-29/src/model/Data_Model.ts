@@ -8,5 +8,5 @@ export interface ForwardRichTextData {
     getScrollHeight: () => number;
     getScrollTop: () => number;
     getClientHeight: () => number;
-    getQuerySelectorAll: (selectors: string) => NodeListOf<Element>;
+    // getQuerySelectorAll: (selectors: string) => NodeListOf<Element>;
 }

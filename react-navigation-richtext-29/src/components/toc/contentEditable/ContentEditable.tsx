@@ -7,7 +7,7 @@ type Props = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const ContentEditable = forwardRef<ForwardRichTextData, Props>(({onCustomPaste}: Props, ref) => {
-  log("<ContentEditable /> rendered");
+  log("<ContentEditableTOC /> rendered");
   const richTextDataRef = useRef<HTMLDivElement>(null);
 
   useImperativeHandle(ref, () => ({
@@ -23,9 +23,9 @@ const ContentEditable = forwardRef<ForwardRichTextData, Props>(({onCustomPaste}:
     getClientHeight(){
         return richTextDataRef.current?.clientHeight || 0;
     },
-    getQuerySelectorAll(selectors: string){
-        return document.createDocumentFragment().querySelectorAll(selectors);
-    }
+    // getQuerySelectorAll(selectors: string){
+    //     return document.createDocumentFragment().querySelectorAll(selectors);
+    // }
   }));
 
   const enterKeyDownHandler = (event: KeyboardEvent<HTMLDivElement>) => {

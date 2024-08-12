@@ -1,4 +1,5 @@
 import { ReactElement, ReactNode, createElement, isValidElement } from "react";
+import log from "../../log";
 
 type Props = {
   rawData?: string;
@@ -15,6 +16,7 @@ const TagDisplayNameMap: { [key: string]: string } = {
 };
 
 const TableOfContents = ({rawData}: Props) => {
+  log("<TableOfContents /> rendered");
 
   const parseHtmlToReact = (htmlString: string): ReactNode[] => {
     const template = document.createElement('template');
