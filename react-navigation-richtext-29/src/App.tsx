@@ -24,7 +24,7 @@ function App() {
         },
         {
           path: '/richtext',
-          element: <RichTextLayout layoutHeight={800} />
+          element: <RichTextLayout layoutHeight={700} />
         },
         {
           path: '/toc',

@@ -15,13 +15,15 @@ const RootLayout = () => {
         <Breadcrumb />
       </header>
 
-      <aside className="sidebar">
-        <Sidebar />
-      </aside>
+      <div >
+        <aside className="sidebar">
+          <Sidebar />
+        </aside>
 
-      <main className="pages">
-        <Outlet />
-      </main>
+        <main className="pages">
+          <Outlet />
+        </main>
+      </div>
     </>
   )
 }

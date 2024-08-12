@@ -1,15 +1,34 @@
 @import url("../../theme/theme.css");
 
 .sidebar {
-    padding: 15px;
+    /* padding: 15px;
     overflow-y: auto;
-    min-height: 100vh;
+    min-height: 100vh; */
+    width: 60px;
+    flex-shrink: 0; /* Prevents the sidebar from shrinking */
+    position: fixed; /* Keeps the sidebar in place while scrolling */
+    height: 80%; /* Full height to match the container */
+    transition: width 0.3s ease-in-out;
+}
+
+.layout-container {
+    display: flex;
+    height: 80vh; /* Ensures the layout takes full viewport height */
+    overflow: hidden; /* Prevents content from spilling over */
 }
 
 .pages {
-    display: flex;
+    /* display: flex;
     padding: 2px;
     overflow-y: auto;
+    position: relative;
+    margin-left: 100px;
+    transition: margin-left 0.3s ease-in-out; */
+    flex-grow: 1; /* Main content takes the remaining space */
+    margin-left: 100px; /* Initial space for the sidebar */
+    padding: 2px;
+    overflow-y: auto; /* Ensures content is scrollable */
+    transition: margin-left 0.3s ease-in-out;
 }
 
 aside {
