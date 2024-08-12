@@ -13,7 +13,7 @@ const Sidebar = memo(() => {
 
   return (
     <>
-      <div style={{ display: "flex", height: "100vh" }}>
+      <div>
         <div className={`sidenav ${isExpanded ? 'expanded' : ''}`} onDoubleClick={toggleSidebar}>
           <div className="content">
             {SidebarData.map((item) => {

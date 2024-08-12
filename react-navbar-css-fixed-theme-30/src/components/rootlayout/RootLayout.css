@@ -3,7 +3,7 @@
 .sidebar {
     padding: 15px;
     overflow-y: auto;
-    min-height: 100vh;
+    max-height: 80vh;
 }
   
 .pages {
