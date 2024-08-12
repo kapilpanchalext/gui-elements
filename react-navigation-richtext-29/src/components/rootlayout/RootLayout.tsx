@@ -7,6 +7,7 @@ import log from '../../log';
 
 const RootLayout = () => {
   log("<RootLayout /> rendered");
+
   return (
     <>
       <header>

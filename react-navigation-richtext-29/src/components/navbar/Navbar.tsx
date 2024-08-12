@@ -4,7 +4,8 @@ import "./Navbar.css";
 import log from "../../log";
 
 const Navbar = memo(() => {
-  log("<Navbar /> rendered");
+  log("<Navbar /> rendered: ");
+
   const {theme, toggleTheme} = useContext(ActiveThemeContext);
   const [isResponsive, setIsResponsive] = useState<boolean>(false);
 

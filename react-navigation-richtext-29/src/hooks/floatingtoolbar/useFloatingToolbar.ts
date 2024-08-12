@@ -8,7 +8,7 @@ type Props = {
 }
 
 const useFloatingToolbar = ({draggableRef, closeButtonRef, showColorPicker}: Props) => {
-  log("<useFloadingToolbar /> rendered");
+  log("<useFloatingToolbar /> rendered");
     const makeDraggable = useCallback((element: HTMLElement) => {
         let offsetX: number, offsetY: number;
         let isDragging = false;

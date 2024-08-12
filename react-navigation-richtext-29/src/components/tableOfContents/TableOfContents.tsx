@@ -50,7 +50,7 @@ const TableOfContents = ({rawData}: Props) => {
     return elements;
   };
 
-  function isReactElementWithChildren(node: ReactNode): node is ReactElement {
+  const isReactElementWithChildren = (node: ReactNode): node is ReactElement => {
     if (isValidElement(node)) {
       if (node?.props.children && node?.props.children[0] !== null) {
         return true;
