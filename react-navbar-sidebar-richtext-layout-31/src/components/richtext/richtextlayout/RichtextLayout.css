@@ -1,40 +1,41 @@
 @import url("../../../theme/theme.css");
 
+:root {
+    --margin-bottom-content: 50px;
+}
+
 .rich-text-layout {
     display: flex;
     flex-direction: row;
-    margin: 10px;
-    padding: 10px;
+    margin: 1px;
+    padding: 1px;
     overflow-y: auto;
     width: 100%;
     background-color: var(--backgroundThemeColor);
     border: 1px solid var(--neutral-200);
     position: sticky;
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom-content);
 }
 
 .table-of-contents {
     display: flex;
     flex-grow: 1;
-    margin: 10px;
-    padding: 10px;
+    margin: 1px;
+    padding: 1px;
     overflow-y: auto;
-    width: 15%;
+    min-width: 15%;
     background-color: var(--backgroundThemeColor);
     border: 1px solid var(--neutral-200);
     position: sticky;
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom-content);
 }
 
 .editor-content {
-    display: flex;
-    flex-grow: 8;
-    margin: 10px;
-    padding: 10px;
+    margin: 1px;
+    padding: 1px;
     overflow-y: auto;
-    width: 85%;
     background-color: var(--backgroundThemeColor);
     border: 1px solid var(--neutral-200);
     position: sticky;
-    margin-bottom: 100px;
+    margin-bottom: var(--margin-bottom-content);
 }

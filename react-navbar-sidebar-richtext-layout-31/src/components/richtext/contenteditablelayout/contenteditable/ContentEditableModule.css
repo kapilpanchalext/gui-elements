@@ -1,0 +1,30 @@
+@import url("../../../../theme/theme.css");
+
+.content-editable-module {
+    margin: 1px;
+    padding: 10px;
+    overflow-y: auto;
+    height: var(--content-height);
+    width: 1500px;
+    background-color: var(--backgroundThemeColor);
+    border: 1px solid var(--neutral-200);
+    position: sticky;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(139, 139, 139); 
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+}

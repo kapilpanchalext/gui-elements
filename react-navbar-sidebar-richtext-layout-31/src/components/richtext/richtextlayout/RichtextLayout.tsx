@@ -1,3 +1,5 @@
+import ContentEditableLayout from "../contenteditablelayout/ContentEditableLayout";
+import TableOfContentsLayout from "../tableofcontentslayout/TableOfContentsLayout";
 import "./RichtextLayout.css";
 
 type Props = {
@@ -10,10 +12,10 @@ const RichtextLayout = ({layoutHeight}: Props) => {
     <>
       <div className="rich-text-layout" style={{ height: `${layoutHeight}px` }}>
         <div className="table-of-contents">
-          
+          <TableOfContentsLayout />
         </div>
         <div className="editor-content">
-
+          <ContentEditableLayout />
         </div>
       </div>
     </>

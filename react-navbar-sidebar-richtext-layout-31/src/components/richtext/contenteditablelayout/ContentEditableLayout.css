@@ -1,0 +1,59 @@
+@import url("../../../theme/theme.css");
+
+:root {
+    --content-height: 400px;
+}
+
+.content-editable-layout {
+    display: flex;
+    flex-grow: 8;
+    flex-direction: column;
+    padding: 5px;
+    overflow-y: auto;
+    border: 1px solid red;
+}
+
+.button-controls {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    overflow-y: auto;
+    border: 1px solid var(--neutral-200);
+    height: 100px;
+}
+
+.scroll-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    overflow-y: auto;
+    border: 1px solid var(--neutral-200);
+    height: 10px;
+}
+
+.editor-content {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    overflow-y: auto;
+    border: 1px solid var(--neutral-200);
+}
+
+.content-editable-page-marker {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    overflow-y: auto;
+    border: 1px solid var(--neutral-200);
+}
+
+.page-marker {
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    padding: 10px;
+    overflow-y: auto;
+    border: 1px solid var(--neutral-200);
+    width: 20px;
+    height: var(--content-height);
+}
